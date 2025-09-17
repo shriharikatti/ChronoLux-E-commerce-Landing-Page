@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ChronoLux - Premium Timepieces</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <h2>ChronoLux</h2>
+        </div>
+        <div class="nav-menu">
+          <a href="#" class="nav-link">Collection</a>
+          <a href="#" class="nav-link">About</a>
+          <a href="#" class="nav-link">Contact</a>
+          <div class="nav-icons">
+            <i class="fas fa-search"></i>
+            <i class="fas fa-heart"></i>
+            <i class="fas fa-shopping-cart"></i>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <div class="product-showcase">
+          <!-- Image Carousel -->
+          <div class="carousel-container">
+            <div class="carousel-wrapper">
+              <div class="carousel-track" id="carouselTrack">
+                <div class="carousel-slide active">
+                  <img
+                    src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&h=600&q=80"
+                    alt="Luxury Watch Main View"
+                    onerror="this.src='https://via.placeholder.com/600x600/667eea/ffffff?text=Luxury+Watch+1'"
+                  />
+                </div>
+                <div class="carousel-slide">
+                  <img
+                    src="https://images.unsplash.com/photo-1524592094714-0f0654e20314?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&h=600&q=80"
+                    alt="Watch Side View"
+                    onerror="this.src='https://via.placeholder.com/600x600/764ba2/ffffff?text=Watch+Side+View'"
+                  />
+                </div>
+                <div class="carousel-slide">
+                  <img
+                    src="https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&h=600&q=80"
+                    alt="Watch Detail View"
+                    onerror="this.src='https://via.placeholder.com/600x600/f7931e/ffffff?text=Watch+Details'"
+                  />
+                </div>
+                <div class="carousel-slide">
+                  <img
+                    src="https://images.unsplash.com/photo-1547996160-81dfa63595aa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&h=600&q=80"
+                    alt="Watch Back View"
+                    onerror="this.src='https://via.placeholder.com/600x600/27ae60/ffffff?text=Watch+Back'"
+                  />
+                </div>
+              </div>
+              <button class="carousel-btn prev" id="prevBtn">
+                <i class="fas fa-chevron-left"></i>
+              </button>
+              <button class="carousel-btn next" id="nextBtn">
+                <i class="fas fa-chevron-right"></i>
+              </button>
+            </div>
+
+            <!-- Thumbnail Navigation -->
+            <div class="thumbnail-nav">
+              <div class="thumbnail active" data-slide="0">
+                <img
+                  src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&h=100&q=80"
+                  alt="Thumbnail 1"
+                  onerror="this.src='https://via.placeholder.com/100x100/667eea/ffffff?text=1'"
+                />
+              </div>
+              <div class="thumbnail" data-slide="1">
+                <img
+                  src="https://images.unsplash.com/photo-1524592094714-0f0654e20314?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&h=100&q=80"
+                  alt="Thumbnail 2"
+                  onerror="this.src='https://via.placeholder.com/100x100/764ba2/ffffff?text=2'"
+                />
+              </div>
+              <div class="thumbnail" data-slide="2">
+                <img
+                  src="https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&h=100&q=80"
+                  alt="Thumbnail 3"
+                  onerror="this.src='https://via.placeholder.com/100x100/f7931e/ffffff?text=3'"
+                />
+              </div>
+              <div class="thumbnail" data-slide="3">
+                <img
+                  src="https://images.unsplash.com/photo-1547996160-81dfa63595aa?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&h=100&q=80"
+                  alt="Thumbnail 4"
+                  onerror="this.src='https://via.placeholder.com/100x100/27ae60/ffffff?text=4'"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Product Information -->
+          <div class="product-info">
+            <div class="product-badge">Limited Edition</div>
+            <h1 class="product-title">Chronos Master GMT</h1>
+            <div class="product-rating">
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <span class="rating-text">(127 reviews)</span>
+            </div>
+
+            <div class="price-section">
+              <span class="current-price">$2,999</span>
+              <span class="original-price">$3,499</span>
+              <span class="discount">15% OFF</span>
+            </div>
+
+            <div class="product-summary">
+              Swiss-made automatic movement with 42-hour power reserve. Features
+              GMT complication, sapphire crystal, and titanium case.
+            </div>
+
+            <!-- Product Options -->
+            <div class="product-options">
+              <div class="option-group">
+                <label>Case Material:</label>
+                <div class="option-buttons">
+                  <button class="option-btn active">Titanium</button>
+                  <button class="option-btn">Steel</button>
+                  <button class="option-btn">Gold</button>
+                </div>
+              </div>
+
+              <div class="option-group">
+                <label>Strap:</label>
+                <div class="option-buttons">
+                  <button class="option-btn active">Leather</button>
+                  <button class="option-btn">Metal</button>
+                  <button class="option-btn">Rubber</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="action-buttons">
+              <button class="btn-primary add-to-cart">
+                <i class="fas fa-shopping-cart"></i>
+                Add to Cart
+              </button>
+              <button class="btn-secondary wishlist">
+                <i class="far fa-heart"></i>
+              </button>
+              <button class="btn-secondary share">
+                <i class="fas fa-share-alt"></i>
+              </button>
+            </div>
+
+            <!-- Toggle Details Button -->
+            <button class="toggle-details" id="toggleDetails">
+              <span>View Specifications</span>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Product Details Section -->
+    <section class="product-details" id="productDetails">
+      <div class="container">
+        <div class="details-grid">
+          <div class="detail-card">
+            <h3>Technical Specifications</h3>
+            <ul>
+              <li><strong>Movement:</strong> Swiss Automatic ETA 2824-2</li>
+              <li><strong>Case Size:</strong> 42mm diameter</li>
+              <li><strong>Water Resistance:</strong> 300m</li>
+              <li><strong>Crystal:</strong> Sapphire with AR coating</li>
+              <li><strong>Power Reserve:</strong> 42 hours</li>
+              <li><strong>Functions:</strong> Hours, Minutes, Seconds, GMT</li>
+            </ul>
+          </div>
+
+          <div class="detail-card">
+            <h3>Materials & Craftsmanship</h3>
+            <ul>
+              <li><strong>Case:</strong> Grade 5 Titanium</li>
+              <li><strong>Bezel:</strong> Ceramic with engraved markers</li>
+              <li>
+                <strong>Dial:</strong> Sunburst blue with luminous indices
+              </li>
+              <li>
+                <strong>Hands:</strong> Rhodium-plated with Super-LumiNova
+              </li>
+              <li><strong>Crown:</strong> Screw-down with logo</li>
+              <li>
+                <strong>Strap:</strong> Italian leather with quick-release
+              </li>
+            </ul>
+          </div>
+
+          <div class="detail-card">
+            <h3>Warranty & Service</h3>
+            <ul>
+              <li><strong>Warranty:</strong> 5 years international</li>
+              <li><strong>Service:</strong> Authorized service centers</li>
+              <li><strong>Authenticity:</strong> Certificate included</li>
+              <li><strong>Packaging:</strong> Premium wooden box</li>
+              <li><strong>Returns:</strong> 30-day satisfaction guarantee</li>
+              <li><strong>Shipping:</strong> Free worldwide express</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+      <div class="container">
+        <div class="features-grid">
+          <div class="feature">
+            <div class="feature-icon">
+              <i class="fas fa-shipping-fast"></i>
+            </div>
+            <h3>Free Shipping</h3>
+            <p>Complimentary worldwide express delivery</p>
+          </div>
+          <div class="feature">
+            <div class="feature-icon">
+              <i class="fas fa-shield-alt"></i>
+            </div>
+            <h3>5-Year Warranty</h3>
+            <p>Comprehensive international coverage</p>
+          </div>
+          <div class="feature">
+            <div class="feature-icon">
+              <i class="fas fa-undo"></i>
+            </div>
+            <h3>30-Day Returns</h3>
+            <p>Satisfaction guaranteed or full refund</p>
+          </div>
+          <div class="feature">
+            <div class="feature-icon">
+              <i class="fas fa-certificate"></i>
+            </div>
+            <h3>Authentic Guarantee</h3>
+            <p>Certificate of authenticity included</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
